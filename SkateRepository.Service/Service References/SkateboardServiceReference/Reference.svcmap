@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="96d29851-fd44-4167-bdf9-29e2c63db3da" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52860/SkateboardService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SkateboardService.xsd" MetadataType="Schema" ID="1e0efd2a-ccd0-479b-a1ba-5422983906b5" SourceId="1" SourceUrl="http://localhost:52860/SkateboardService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SkateboardService.wsdl" MetadataType="Wsdl" ID="10e2997c-f668-492d-934b-5357b1c8da03" SourceId="1" SourceUrl="http://localhost:52860/SkateboardService.svc?wsdl" />
+    <MetadataFile FileName="SkateboardService1.xsd" MetadataType="Schema" ID="13315dc1-e3cc-4563-b4e4-10d42596ed02" SourceId="1" SourceUrl="http://localhost:52860/SkateboardService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SkateboardService2.xsd" MetadataType="Schema" ID="24c5db37-ebf7-4179-baab-3b8edd584751" SourceId="1" SourceUrl="http://localhost:52860/SkateboardService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SkateboardService.disco" MetadataType="Disco" ID="dbb9270c-02c0-4095-b96c-1b72ab92c6d5" SourceId="1" SourceUrl="http://localhost:52860/SkateboardService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,116 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skate.Shared", "Skate.Shared\Skate.Shared.csproj", "{D6B8119F-DA65-494D-B188-82A4328F1B88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skate.Presentation", "Skate.Presentation\Skate.Presentation.csproj", "{A323BD0B-8CCA-4A53-ABB0-905DA3022653}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skate.Service", "Skate.Service\Skate.Service.csproj", "{92434F99-A372-413D-BDF7-2B9EC906C249}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skate.Web", "Skate.Web\Skate.Web.csproj", "{E3688B13-4BED-425F-9FA4-B895DF59FD42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skate.Web.Tests", "Skate.Web.Tests\Skate.Web.Tests.csproj", "{2E73A984-56C7-4760-AA75-417CF0FEC88C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{78367E42-2A82-49F4-96B4-2B0A2FCF6395}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{46354DF8-81DD-44EC-BFA9-5241A79FF430}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B315F71C-2D12-4954-861D-597CC07C6BDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E2098BB0-7123-45BE-A28E-A3A7B919C619}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5C85B87B-027E-4F11-A449-26E8CEE24F14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{C792A409-D7E9-4AEC-AD6A-387F0538588C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{71348370-16FB-461C-B90B-67904B369041}"
+	ProjectSection(SolutionItems) = preProject
+		Skate.Data\People.sdf = Skate.Data\People.sdf
+		Skate.Data\People.txt = Skate.Data\People.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkateRepository.Service", "SkateRepository.Service\SkateRepository.Service.csproj", "{141D0B73-C41E-422C-BCBD-07B4BE236FF4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92434F99-A372-413D-BDF7-2B9EC906C249} = {92434F99-A372-413D-BDF7-2B9EC906C249}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://pescetto.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Skate.Shared\\Skate.Shared.csproj
+		SccProjectTopLevelParentUniqueName1 = Skate.sln
+		SccProjectName1 = Skate.Shared
+		SccLocalPath1 = Skate.Shared
+		SccProjectUniqueName2 = Skate.Presentation\\Skate.Presentation.csproj
+		SccProjectTopLevelParentUniqueName2 = Skate.sln
+		SccProjectName2 = Skate.Presentation
+		SccLocalPath2 = Skate.Presentation
+		SccProjectUniqueName3 = Skate.Service\\Skate.Service.csproj
+		SccProjectTopLevelParentUniqueName3 = Skate.sln
+		SccProjectName3 = Skate.Service
+		SccLocalPath3 = Skate.Service
+		SccProjectUniqueName4 = Skate.Web\\Skate.Web.csproj
+		SccProjectTopLevelParentUniqueName4 = Skate.sln
+		SccProjectName4 = Skate.Web
+		SccLocalPath4 = Skate.Web
+		SccProjectUniqueName5 = Skate.Web.Tests\\Skate.Web.Tests.csproj
+		SccProjectTopLevelParentUniqueName5 = Skate.sln
+		SccProjectName5 = Skate.Web.Tests
+		SccLocalPath5 = Skate.Web.Tests
+		SccProjectUniqueName6 = SkateRepository.Service\\SkateRepository.Service.csproj
+		SccProjectTopLevelParentUniqueName6 = Skate.sln
+		SccProjectName6 = SkateRepository.Service
+		SccLocalPath6 = SkateRepository.Service
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6B8119F-DA65-494D-B188-82A4328F1B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B8119F-DA65-494D-B188-82A4328F1B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B8119F-DA65-494D-B188-82A4328F1B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B8119F-DA65-494D-B188-82A4328F1B88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A323BD0B-8CCA-4A53-ABB0-905DA3022653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A323BD0B-8CCA-4A53-ABB0-905DA3022653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A323BD0B-8CCA-4A53-ABB0-905DA3022653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A323BD0B-8CCA-4A53-ABB0-905DA3022653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92434F99-A372-413D-BDF7-2B9EC906C249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92434F99-A372-413D-BDF7-2B9EC906C249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92434F99-A372-413D-BDF7-2B9EC906C249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92434F99-A372-413D-BDF7-2B9EC906C249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3688B13-4BED-425F-9FA4-B895DF59FD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3688B13-4BED-425F-9FA4-B895DF59FD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3688B13-4BED-425F-9FA4-B895DF59FD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3688B13-4BED-425F-9FA4-B895DF59FD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E73A984-56C7-4760-AA75-417CF0FEC88C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E73A984-56C7-4760-AA75-417CF0FEC88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E73A984-56C7-4760-AA75-417CF0FEC88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E73A984-56C7-4760-AA75-417CF0FEC88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{141D0B73-C41E-422C-BCBD-07B4BE236FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{141D0B73-C41E-422C-BCBD-07B4BE236FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{141D0B73-C41E-422C-BCBD-07B4BE236FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{141D0B73-C41E-422C-BCBD-07B4BE236FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6B8119F-DA65-494D-B188-82A4328F1B88} = {5C85B87B-027E-4F11-A449-26E8CEE24F14}
+		{141D0B73-C41E-422C-BCBD-07B4BE236FF4} = {46354DF8-81DD-44EC-BFA9-5241A79FF430}
+		{A323BD0B-8CCA-4A53-ABB0-905DA3022653} = {B315F71C-2D12-4954-861D-597CC07C6BDD}
+		{92434F99-A372-413D-BDF7-2B9EC906C249} = {E2098BB0-7123-45BE-A28E-A3A7B919C619}
+		{E3688B13-4BED-425F-9FA4-B895DF59FD42} = {C792A409-D7E9-4AEC-AD6A-387F0538588C}
+		{2E73A984-56C7-4760-AA75-417CF0FEC88C} = {C792A409-D7E9-4AEC-AD6A-387F0538588C}
+	EndGlobalSection
+EndGlobal

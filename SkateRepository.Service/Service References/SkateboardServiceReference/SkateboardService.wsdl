@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SkateboardService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52860/SkateboardService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52860/SkateboardService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52860/SkateboardService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Skate.Shared" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISkateboardService_GetSkateboards_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSkateboards" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_GetSkateboards_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSkateboardsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_GetSkateboard_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSkateboard" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_GetSkateboard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSkateboardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_AddSkateboard_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSkateboard" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_AddSkateboard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSkateboardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_UpdateSkateboard_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSkateboard" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_UpdateSkateboard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSkateboardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_DeleteSkateboard_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSkateboard" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_DeleteSkateboard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSkateboardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_UpdateSkateboards_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSkateboards" />
+  </wsdl:message>
+  <wsdl:message name="ISkateboardService_UpdateSkateboards_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSkateboardsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISkateboardService">
+    <wsdl:operation name="GetSkateboards">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISkateboardService/GetSkateboards" message="tns:ISkateboardService_GetSkateboards_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISkateboardService/GetSkateboardsResponse" message="tns:ISkateboardService_GetSkateboards_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSkateboard">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISkateboardService/GetSkateboard" message="tns:ISkateboardService_GetSkateboard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISkateboardService/GetSkateboardResponse" message="tns:ISkateboardService_GetSkateboard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSkateboard">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISkateboardService/AddSkateboard" message="tns:ISkateboardService_AddSkateboard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISkateboardService/AddSkateboardResponse" message="tns:ISkateboardService_AddSkateboard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSkateboard">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISkateboardService/UpdateSkateboard" message="tns:ISkateboardService_UpdateSkateboard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISkateboardService/UpdateSkateboardResponse" message="tns:ISkateboardService_UpdateSkateboard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSkateboard">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISkateboardService/DeleteSkateboard" message="tns:ISkateboardService_DeleteSkateboard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISkateboardService/DeleteSkateboardResponse" message="tns:ISkateboardService_DeleteSkateboard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSkateboards">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISkateboardService/UpdateSkateboards" message="tns:ISkateboardService_UpdateSkateboards_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISkateboardService/UpdateSkateboardsResponse" message="tns:ISkateboardService_UpdateSkateboards_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISkateboardService" type="tns:ISkateboardService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSkateboards">
+      <soap:operation soapAction="http://tempuri.org/ISkateboardService/GetSkateboards" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSkateboard">
+      <soap:operation soapAction="http://tempuri.org/ISkateboardService/GetSkateboard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSkateboard">
+      <soap:operation soapAction="http://tempuri.org/ISkateboardService/AddSkateboard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSkateboard">
+      <soap:operation soapAction="http://tempuri.org/ISkateboardService/UpdateSkateboard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSkateboard">
+      <soap:operation soapAction="http://tempuri.org/ISkateboardService/DeleteSkateboard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSkateboards">
+      <soap:operation soapAction="http://tempuri.org/ISkateboardService/UpdateSkateboards" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SkateboardService">
+    <wsdl:port name="BasicHttpBinding_ISkateboardService" binding="tns:BasicHttpBinding_ISkateboardService">
+      <soap:address location="http://localhost:52860/SkateboardService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

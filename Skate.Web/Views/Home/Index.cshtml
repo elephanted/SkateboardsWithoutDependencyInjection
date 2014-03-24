@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Skateboards &raquo;</h1>
+    <p class="lead">This sample application demonstrates some of the problems that can arise when dependency injection
+    (inversion of control) is not used. For a detailed explanaition of what's going on, read the <a href="http://blog.edwardpescetto.com/">blog entry here</a>.</p>
+    <p>
+    @Html.ActionLink("Skateboards »", "Index", "Skateboard", new { @class = "btn btn-primary btn-large" })
+    
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Follow along with the blog entry for a detailed explaination of the code and its problems with tight coupling.
+        </p>
+        <p><a class="btn btn-default" href="http://blog.edwardpescetto.com/">Go to Blog &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get The Fixed Application</h2>
+        <p>Are you curios what this application would look like if it was properly architected with dependency injection? You can fork it on github!</p>
+        <p><a class="btn btn-default" href="https://github.com/elephanted">Go to Github &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Want to Learn More?</h2>
+        <p><a href="http://lmgtfy.com/?q=dependency+injection">LMGTFY</a>. Also, take a peek at Mark Seeman's book:</p>
+        <p><a class="btn btn-default" href="http://www.manning.com/seemann/">Mark Seeman's Book &raquo;</a></p>
+    </div>
+</div>
