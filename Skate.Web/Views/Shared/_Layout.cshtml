@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Before Dependency Injection (Tightly Coupled)</title>
+    <title>@ViewBag.Title - After Dependency Injection (Tightly Coupled)</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -32,7 +32,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Skateboards (Tightly Coupled)</p>
+            <p>&copy; @DateTime.Now.Year - Skateboards (Loosely Coupled)</p>
         </footer>
     </div>
 

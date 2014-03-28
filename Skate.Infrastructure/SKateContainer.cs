@@ -7,25 +7,28 @@ using SkateRepository.Interface;
 using Skate.Shared;
 using Skate.Presentation;
 using SkateRepository.Service;
+using SkateRepository.CSV;
+using SkateRepository.SQL;
+using SkateRepository.Caching;
 
 namespace Skate.Infrastructure
 {
-    public class SkateContainer 
+    public class SkateContainer
     {
-        static ISkateRepository _repository = new ServiceRepository();
+        //Uncomment this line to use a WCF service repository
+        //static ISkateRepository _repository = new ServiceRepository();
+
+        //Uncomment this line to use a CSV file repository
+        //static ISkateRepository _repository = new CSVRepository();
+
+        //Uncomment this line to use a SQL database table repository
+        //static ISkateRepository _repository = new SQLRepository();
+
+        //Uncomment this line to use a Caching database table repository
+        static ISkateRepository wrappedRepository = new ServiceRepository();
+        static ISkateRepository _repository = new CachingRepository(wrappedRepository);
+
         public SkateViewModel ViewModel = new SkateViewModel(_repository);
-
-        //public ISkateRepository Repository()
-        //{
-        //    ISkateRepository repository = new ServiceRepository();
-        //    return repository;
-        //}
-
-        //public SkateViewModel ViewModel()
-        //{
-        //    ISkateRepository Repository = new ServiceRepository();
-        //    var viewModel = new SkateViewModel(Repository);
-        //    return viewModel;
-        //}        
+        
     }
 }

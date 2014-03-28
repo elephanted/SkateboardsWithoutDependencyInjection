@@ -7,7 +7,10 @@
     <p class="lead">This sample application demonstrates some of the problems that can arise when dependency injection
     (inversion of control) is not used. For a detailed explanaition of what's going on, read the <a href="http://blog.edwardpescetto.com/">blog entry here</a>.</p>
     <p>
-    @Html.ActionLink("Skateboards »", "Index", "Skateboard", new { @class = "btn btn-primary btn-large" })
+        <p>
+            @Html.ActionLink("Skateboards »", "Index", "Skateboard", new { }, new { @class = "btn btn-primary btn-large" })
+        </p>
+   
     
 </div>
 

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1C2387C9-6286-4A5C-91F0-1BA37D6A5500}</ProjectGuid>
+    <ProjectGuid>{169AF489-86F0-497F-B304-5CA39D8A8D65}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Skate.Infrastructure</RootNamespace>
-    <AssemblyName>Skate.Infrastructure</AssemblyName>
+    <RootNamespace>SkateRepository.CSV</RootNamespace>
+    <AssemblyName>SkateRepository.CSV</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,41 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SkateContainer.cs" />
+    <Compile Include="CSVRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Caching\SkateRepository.Caching.csproj">
-      <Project>{d886af74-d002-405e-9093-29da2775f7a1}</Project>
-      <Name>SkateRepository.Caching</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Skate.Presentation\Skate.Presentation.csproj">
-      <Project>{a323bd0b-8cca-4a53-abb0-905da3022653}</Project>
-      <Name>Skate.Presentation</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Skate.Service\Skate.Service.csproj">
-      <Project>{92434f99-a372-413d-bdf7-2b9ec906c249}</Project>
-      <Name>Skate.Service</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Skate.Shared\Skate.Shared.csproj">
       <Project>{d6b8119f-da65-494d-b188-82a4328f1b88}</Project>
       <Name>Skate.Shared</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SkateRepository.CSV\SkateRepository.CSV.csproj">
-      <Project>{169af489-86f0-497f-b304-5ca39d8a8d65}</Project>
-      <Name>SkateRepository.CSV</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SkateRepository.Interface\SkateRepository.Interface.csproj">
       <Project>{eabc5d1b-e177-4a92-ba3d-85ecc0b90f52}</Project>
       <Name>SkateRepository.Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SkateRepository.Service\SkateRepository.Service.csproj">
-      <Project>{141d0b73-c41e-422c-bcbd-07b4be236ff4}</Project>
-      <Name>SkateRepository.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SkateRepository.SQL\SkateRepository.SQL.csproj">
-      <Project>{67f302f8-b486-41e7-9bc8-07aa9ef3caac}</Project>
-      <Name>SkateRepository.SQL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
