@@ -51,6 +51,10 @@
       <Project>{d6b8119f-da65-494d-b188-82a4328f1b88}</Project>
       <Name>Skate.Shared</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SkateRepository.Interface\SkateRepository.Interface.csproj">
+      <Project>{eabc5d1b-e177-4a92-ba3d-85ecc0b90f52}</Project>
+      <Name>SkateRepository.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SkateRepository.Service\SkateRepository.Service.csproj">
       <Project>{141d0b73-c41e-422c-bcbd-07b4be236ff4}</Project>
       <Name>SkateRepository.Service</Name>

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using System.ServiceModel;
 using Skate.Shared;
 using SkateRepository.Service.SkateboardServiceReference;
+using SkateRepository.Interface;
 
 
 namespace SkateRepository.Service
 {
-    public class ServiceRepository
+    public class ServiceRepository : ISkateRepository
     {
         SkateboardServiceClient ServiceProxy = new SkateboardServiceClient();
 

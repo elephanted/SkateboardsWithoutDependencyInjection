@@ -4,17 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{141D0B73-C41E-422C-BCBD-07B4BE236FF4}</ProjectGuid>
+    <ProjectGuid>{EABC5D1B-E177-4A92-BA3D-85ECC0B90F52}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SkateRepository.Service</RootNamespace>
-    <AssemblyName>SkateRepository.Service</AssemblyName>
+    <RootNamespace>SkateRepository.Interface</RootNamespace>
+    <AssemblyName>SkateRepository.Interface</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,8 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,58 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service References\SkateboardServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="ServiceRepository.cs" />
+    <Compile Include="ISkateRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Properties\DataSources\Skate.Shared.Skateboard.datasource" />
-    <None Include="Service References\SkateboardServiceReference\SkateboardService.wsdl" />
-    <None Include="Service References\SkateboardServiceReference\SkateboardService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\SkateboardServiceReference\SkateboardService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\SkateboardServiceReference\SkateboardService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Skate.Shared\Skate.Shared.csproj">
       <Project>{d6b8119f-da65-494d-b188-82a4328f1b88}</Project>
       <Name>Skate.Shared</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SkateRepository.Interface\SkateRepository.Interface.csproj">
-      <Project>{eabc5d1b-e177-4a92-ba3d-85ecc0b90f52}</Project>
-      <Name>SkateRepository.Interface</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\SkateboardServiceReference\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\SkateboardServiceReference\SkateboardService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\SkateboardServiceReference\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\SkateboardServiceReference\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\SkateboardServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
